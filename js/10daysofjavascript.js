@@ -86,9 +86,7 @@ function getPerimeter(length, width) {
 
 /***   Day 1: Let and Const ***/
 
-
-function main() {
-    
+function main() {   
     // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
      
     const PI = Math.PI;
@@ -96,7 +94,7 @@ function main() {
     
      // Print the area of the circle:
     
-     console.log(PI* Math.pow(input,2));
+     console.log(PI * Math.pow(input,2));
     
     // Print the perimeter of the circle:
     
