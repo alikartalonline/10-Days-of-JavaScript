@@ -1,7 +1,9 @@
  // 10 Days of JavaScript
 
 
-/***    Day 0: Hello, World! ***/
+
+
+//*************  Day 0: Hello, World!  *************  
 
 function greeting(parameterVariable) {
     // This line prints 'Hello, World!' to the console:
@@ -11,7 +13,9 @@ function greeting(parameterVariable) {
     console.log(parameterVariable);
 }
 
-/***    Day 0: Data Types ***/
+
+
+//*************  Day 0: Data Types  *************  
 
 /**
 *   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
@@ -47,7 +51,7 @@ function performOperation(secondInteger, secondDecimal, secondString) {
 
 
 
-/***   Day 1: Arithmetic Operators ***/
+//*************  Day 1: Arithmetic Operators  *************  
 
 /**
 *   Calculate the area of a rectangle.
@@ -64,7 +68,6 @@ function getArea(length, width) {
     
     return area;
 }
-
 
 /**
 *   Calculate the perimeter of a rectangle.
@@ -84,7 +87,7 @@ function getPerimeter(length, width) {
 
 
 
-/***   Day 1: Let and Const ***/
+//*************  Day 1: Let and Const  *************
 
 function main() {   
     // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
@@ -102,7 +105,9 @@ function main() {
 
     }
 
-    /***   Day 2: Conditional Statements: If - Else ***/
+
+
+//*************  Day 2: Conditional Statements: If - Else  *************
 
     function getGrade(score) {
         let grade;
@@ -125,11 +130,16 @@ function main() {
         if (score >= 0 && score <= 5){
         return grade = "F";
     }
-    
+
         return grade;
     }
     
 
+    function main() {
+    const score = +(readLine());
+    
+    console.log(getGrade(score));
+}
 
 
 
