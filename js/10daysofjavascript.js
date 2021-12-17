@@ -125,6 +125,7 @@ function main() {
         if (score >= 0 && score <= 5){
         return grade = "F";
     }
+    
         return grade;
     }
     
@@ -134,4 +135,4 @@ function main() {
 
 
 
-    
+
