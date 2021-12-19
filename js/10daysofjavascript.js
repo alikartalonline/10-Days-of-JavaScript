@@ -142,6 +142,92 @@ function main() {
 }
 
 
+//*************  Day 2: Conditional Statements: Switch  *************
+
+
+// Method 1:  s.charAt(0)
+
+function getLetter(s) {
+    let letter;
+    // Write your code here
+    switch(s.charAt(0)) {  // CharAt = İlk Karakteri Bulmak idi (0) gibi ("Hint" yani "ipucunda" vermişti bunu)
+
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        letter = 'A'
+        break;
+
+        case 'b':
+        case 'c':
+        case 'd':
+        case 'f':
+        case 'g':
+        letter = 'B'
+        break;
+
+        case 'h':
+        case 'j':
+        case 'k':
+        case 'l':
+        case 'm':
+        letter = 'C'
+        break;
+
+        case 'n':
+        case 'p':
+        case 'q':
+        case 'r':
+        case 's':
+        case 't':
+        case 'v':
+        case 'w':
+        case 'x':
+        case 'y':
+        case 'z':
+        letter = 'D'
+        break;
+    }
+    return letter;
+}
+
+
+// Method 2:  includes(s[0])  // includes(0) methodu -> aradığımız bilginin değişken içerisinde olup olmadığının kontrolüdür
+
+
+function getLetter(s) {
+    let letter;
+    // Write your code here
+    switch(true) {
+          
+        case 'aeiou'.includes(s[0]):
+        letter = "A";
+        break;
+           
+        case 'bcdfg'.includes(s[0]):
+        letter = "B";
+        break;
+           
+        case 'hjklm'.includes(s[0]):
+        letter = "C";
+        break;  
+                 
+        case 'npqrstvwxyz'.includes(s[0]):
+        letter = "D";
+        break; 
+          }
+
+    return letter;
+}
+
+
+
+
+
+
+
 
 
 
