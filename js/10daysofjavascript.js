@@ -87,6 +87,51 @@ function getPerimeter(length, width) {
 
 
 
+//*************  Day 1: Functions  *************
+
+// Method - 1:
+
+/*
+ * Create the function factorial here
+ */
+function factorial (n) {
+    if ((n === 0) ||  (n === 1) )
+    return 1;
+    else
+    return (n * factorial(n-1)); 
+}
+
+function main() {
+    const n = +(readLine());
+    
+    console.log(factorial(n));
+}
+
+// Method - 2:
+
+/*
+ * Create the function factorial here
+ */
+function factorial(n) {
+    
+    let finalValue = 1;
+    
+    for(let i = n; i>1; i--) {
+        finalValue *= i;
+        }
+        
+        return finalValue; 
+    } 
+    
+
+function main() {
+    const n = +(readLine());
+    
+    console.log(factorial(n));
+}
+
+
+
 //*************  Day 1: Let and Const  *************
 
 function main() {   
