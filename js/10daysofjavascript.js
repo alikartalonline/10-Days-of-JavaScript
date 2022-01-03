@@ -269,7 +269,24 @@ function getLetter(s) {
 
 
 
+//*************  Day 3: Arrays  *************
 
+ 
+// *   Return the second largest number in the array.
+// *   @param {Number[]} nums - An array of numbers.
+// *   @return {Number} The second largest number in the array.
+
+
+
+function getSecondLargest(nums) {
+    
+    let secondLargest = nums.sort(function(a,b) {  // secondLargest adında bir değişken açtık, 
+            return b-a; // ve nums'u bu değişken içinde büyükten küçüğe doğru sıraladık
+        });
+         return secondLargest.find((secondLargest) => secondLargest < nums[0]); 
+         // daha sonra .find metoduyla ikinci büyük sayısı bulmuş olduk.
+    }
+    
 
 
 
