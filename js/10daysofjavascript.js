@@ -268,6 +268,39 @@ function getLetter(s) {
 }
 
 
+//*************  Day 2: Loops  *************
+
+
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+
+let vowels = 'aeiou' 
+let s = 'javascriptloops'
+
+function vowelsAndConsonants(s) {
+    for (let index = 0; index < s.length; index++){
+
+        if (vowels.includes(s[index])){
+            console.log(s[index]);
+        }
+    }
+
+    for (let index = 0; index < s.length; index++){
+
+        if (!vowels.includes(s[index])){
+            console.log(s[index]);
+        }
+    }
+
+}
+
+// console.log(vowelsAndConsonants(s)) yazdırarak kendi konsolumuzda da görebiliriz...
+
+
+
+
 
 //*************  Day 3: Arrays  *************
 
