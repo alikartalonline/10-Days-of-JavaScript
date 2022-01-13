@@ -322,6 +322,53 @@ function getSecondLargest(nums) {
     
 
 
+//*************  Day 3: Try, Catch, and Finally  *************
+
+
+// Method - 1:
+
+function reverseString(s) {
+
+    try {
+     let str =  s.split("").reverse().join(""); // str: is the alphabetical reverse writing of "s"
+      console.log(str);
+    } 
+    catch (err) { // An error occured in the code 
+        console.log(err.message);
+        console.log(s); 
+        }
+
+};
+// reverseString("123") --> For Check
+
+
+
+// Method - 2 : ( on the way :D )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
