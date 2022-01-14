@@ -343,11 +343,21 @@ function reverseString(s) {
 
 
 
-// Method - 2 : ( on the way :D )
+// Method - 2 : (similar way)
 
+function reverseString(s) {
 
-
-
+    try {
+        s = s.split("").reverse().join(""); // böl, ters çevir, birleştir
+       }
+       catch (err){
+           console.log("s.split is not a function") // hata var ise console'a bu raporu yazdır ("soru" da böyle istiyor)
+       }
+       finally {
+           console.log(s) // hata var ise hata raporundan sonra da orjinal dize yazılsın, hata yok ise sadece dize yazılsın   
+       }
+   
+};
 
 
 
