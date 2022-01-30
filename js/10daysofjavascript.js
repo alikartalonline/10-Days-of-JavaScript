@@ -361,6 +361,42 @@ function reverseString(s) {
 
 
 
+//*************  Day 3: Throw  *************
+
+
+/*
+ * Complete the isPositive function.
+ * If 'a' is positive, return "YES".
+ * If 'a' is 0, throw an Error with the message "Zero Error"
+ * If 'a' is negative, throw an Error with the message "Negative Error"
+ */
+
+function isPositive(a) {
+    
+    if ( a > 0) {
+        return "YES"
+    } else if ( a === 0) {
+         throw Error("Zero Error")
+    } else if ( a < 0) {
+         throw Error("Negative Error")
+    }
+
+};
+
+
+    // Method 2:
+
+function isPositive(a) {
+
+    let final = 'YES';
+
+    if (a < 0) {
+        throw ( {message: 'Negative Error'} );
+    } else if (a === 0) {
+        throw ( {message: 'Zero Error'} );
+    }
+ return final;
+};
 
 
 
@@ -373,6 +409,45 @@ function reverseString(s) {
 
 
 
+
+
+
+
+
+
+
+
+
+//*************  Day 7: Regular Expressions I  *************
+
+
+function regexVar() {
+    /*
+     * Declare a RegExp object variable named 're'
+     * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
+     */
+     let re = /^([aeiou]).*\1$/;
+     return re;    
+    /*
+     * Do not remove the return statement
+     */
+    return re;
+}
+//  Kısa bir açıklama eklemek istiyorum:
+// ^ = birinci satır başındaki karakteri seçer
+// $ = ile sondaki karakteri seçebiliriz!
+// [] = Bir aralık belirlememizi sağlıyor.
+// () = Parantez içerisinde eşleşen eleman varsa saklanır
+// ^([aeiou]) = ise satır başındaki küçük aeiou ile başlayan harfleri seçmek için
+// . = Noktanın yapmış olduğu şey, tek bir karakter seçimi yani biz sondaki karakteri seçeceğiz değil mi o yüzden önce "." koymalıyız
+// * veya + = birbirine benzer ifadeler ikiside soruyu doğru cevaplardı kısaca;
+// * veya +  = Devamını getir diyoruz ama aynı karakterse getirir ki soru da bize aynı ünlü ile başlar aynı ünlü ile biter demişti
+// \1$ = ile de baştaki ifadenin aynısı olan ifadeden varsa seçecek demek. Yani a ise a gelmeli gibi. $ ile son ifadeye bakıyoruz bu şekilde.
+// Çok kafa yakıyor ya, beni de uyuz etti soru...
+
+
+// Method 2: 
+/^(a|e|i|o|u).+\1$/;  // a | e ==> a veya e demek, bu şekilde de yazılabilirdi, aynı sonuç.
 
 
 
