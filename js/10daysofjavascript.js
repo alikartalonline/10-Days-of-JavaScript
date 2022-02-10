@@ -1,6 +1,3 @@
- // 10 Days of JavaScript
-
-
 
 
 //*************  Day 0: Hello, World!  *************  
@@ -491,11 +488,11 @@ function regexVar() {
 <div id="div"></div>
 
 // Css: 
-#btn{
-    height: 48px;
-    width: 96px;
-    font-size: 24px; 
- }
+// #btn{
+//     height: 48px;
+//     width: 96px;
+//     font-size: 24px; 
+//  }
  
  // Javascript :
     const butoncuk = document.querySelector('div')
@@ -513,7 +510,7 @@ function regexVar() {
 // *** Method-2 ***
 
 // Html:
-<button type="button" id="btn" >0</button>
+// <button type="button" id="btn">0</button>
 
 // Javascript:
 let butoncukDOM =  document.getElementById('btn');
@@ -523,11 +520,8 @@ butoncukDOM.addEventListener('click', function() {
     butoncukDOM.innerHTML = count;
 });
 
-
-
 // *** Method-3 ***
-
 // Html ile işi çabucak da çözebiliriz ama kolaya kaçmak olur :)
-<button type="button" id="btn" onclick="this.innerHTML++" >0</button>
+<button type="button" id="btn" onclick="this.innerHTML++">0</button>
 
 
