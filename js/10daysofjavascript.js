@@ -400,16 +400,47 @@ function isPositive(a) {
 
 
 
+//*************  Day 4: Create a Rectangle Object  *************
+
+/*
+ * Complete the Rectangle function
+ */
+function Rectangle(a, b) {
+    
+    return (  // sorunun bizden object istediğini unutmamak lazım, çünkü ben unuttum...
+    {
+    length: a,
+    width: b,
+    perimeter: 2*(a+b),
+    area: a*b,
+    }
+    );
+};
 
 
+//*************  Day 5: Inheritance  *************
 
+class Rectangle {
+    constructor(w, h) {
+        this.w = w;
+        this.h = h;
+    }
+}
 
-
-
-
-
-
-
+/*
+ *  Write code that adds an 'area' method to the Rectangle class' prototype
+ */
+Rectangle.prototype.area = function() {
+    return this.h * this.w
+}
+/*
+ * Create a Square class that inherits from Rectangle and implement its class constructor
+ */
+class Square extends Rectangle {
+    constructor(w) {
+        super(w,w)
+    }
+}
 
 
 
@@ -452,10 +483,51 @@ function regexVar() {
 
 
 
+//*************  Day 8: Create a Button  *************
+
+// *** Method-1 ***
+
+// Html:
+<div id="div"></div>
+
+// Css: 
+#btn{
+    height: 48px;
+    width: 96px;
+    font-size: 24px; 
+ }
+ 
+ // Javascript :
+    const butoncuk = document.querySelector('div')
+
+    let count = 0;
+
+    butoncuk.innerHTML = `<button id="btn">${count}</button>`
+
+    btn.onclick=function(){
+    document.getElementById('btn').innerHTML = count = count + 1;
+    console.log(count)
+}
+
+
+// *** Method-2 ***
+
+// Html:
+<button type="button" id="btn" >0</button>
+
+// Javascript:
+let butoncukDOM =  document.getElementById('btn');
+let count = 0;
+butoncukDOM.addEventListener('click', function() {
+    count = count + 1;
+    butoncukDOM.innerHTML = count;
+});
 
 
 
+// *** Method-3 ***
 
-
+// Html ile işi çabucak da çözebiliriz ama kolaya kaçmak olur :)
+<button type="button" id="btn" onclick="this.innerHTML++" >0</button>
 
 
