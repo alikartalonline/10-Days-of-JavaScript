@@ -415,6 +415,25 @@ function Rectangle(a, b) {
 };
 
 
+
+//*************  Day 4: Classes *************
+
+const reducer = (previousValue, currentValue) => previousValue + currentValue;
+   
+class Polygon{
+    
+constructor(sides){        
+    this.sides = sides
+}
+
+perimeter() {
+    return this.sides.reduce(reducer)
+}    
+
+};
+
+
+
 //*************  Day 5: Inheritance  *************
 
 class Rectangle {
