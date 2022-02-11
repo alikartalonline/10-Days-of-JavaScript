@@ -468,7 +468,7 @@ let nums = [1,2,3,4,5,6,7,8,9,10]
 function modifyArray(nums) {
     
     let nums2 = nums.map(item => item % 2 == 0 ? item*2 : item*3)
-    console.log(nums2)
+    //console.log(nums2)
 
     
     return nums2
