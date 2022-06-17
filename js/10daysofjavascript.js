@@ -12,6 +12,9 @@ function greeting(parameterVariable) {
 
 
 
+
+
+
 //*************  Day 0: Data Types  *************  
 
 /**
@@ -29,22 +32,28 @@ function greeting(parameterVariable) {
 function performOperation(secondInteger, secondDecimal, secondString) {
     // Declare a variable named 'firstInteger' and initialize with integer value 4.
     const firstInteger = 4;
-    
+
     // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0.
     const firstDecimal = 4.0;
-    
+
     // Declare a variable named 'firstString' and initialize with the string "HackerRank".
     const firstString = 'HackerRank ';
-    
+
     // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number        type) on a new line.
-    
+
     console.log(firstInteger + Number(secondInteger));
     // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number            type) on a new line.
     console.log(firstDecimal + Number(secondDecimal));
-    
+
     // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
     console.log(firstString + secondString);
 }
+
+
+
+
+
+
 
 
 
@@ -62,7 +71,7 @@ function getArea(length, width) {
     let area;
     // Write your code here
     area = length * width
-    
+
     return area;
 }
 
@@ -77,10 +86,15 @@ function getArea(length, width) {
 function getPerimeter(length, width) {
     let perimeter;
     // Write your code here
-    perimeter= 2 * (length+width)
+    perimeter = 2 * (length + width)
 
     return perimeter;
 }
+
+
+
+
+
 
 
 
@@ -91,18 +105,22 @@ function getPerimeter(length, width) {
 /*
  * Create the function factorial here
  */
-function factorial (n) {
-    if ((n === 0) ||  (n === 1) )
-    return 1;
+function factorial(n) {
+    if ((n === 0) || (n === 1))
+        return 1;
     else
-    return (n * factorial(n-1)); 
+        return (n * factorial(n - 1));
 }
 
 function main() {
     const n = +(readLine());
-    
+
     console.log(factorial(n));
 }
+
+
+
+
 
 // Method - 2:
 
@@ -110,78 +128,100 @@ function main() {
  * Create the function factorial here
  */
 function factorial(n) {
-    
+
     let finalValue = 1;
-    
-    for(let i = n; i>1; i--) {
+
+    for (let i = n; i > 1; i--) {
         finalValue *= i;
-        }
-        
-        return finalValue; 
-    } 
-    
+    }
+
+    return finalValue;
+}
+
 
 function main() {
     const n = +(readLine());
-    
+
     console.log(factorial(n));
 }
 
 
 
+
+
+
+
+
+
+
 //*************  Day 1: Let and Const  *************
 
-function main() {   
+function main() {
     // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
-     
+
     const PI = Math.PI;
     let input = Number(readLine());
-    
-     // Print the area of the circle:
-    
-     console.log(PI * Math.pow(input,2));
-    
-    // Print the perimeter of the circle:
-    
-    console.log(2 * PI * input); 
 
-    }
+    // Print the area of the circle:
+
+    console.log(PI * Math.pow(input, 2));
+
+    // Print the perimeter of the circle:
+
+    console.log(2 * PI * input);
+
+}
+
+
+
+
+
+
 
 
 
 //*************  Day 2: Conditional Statements: If - Else  *************
 
-    function getGrade(score) {
-        let grade;
-        // Write your code here
-        if (score > 25 && score <= 30){
+function getGrade(score) {
+    let grade;
+    // Write your code here
+    if (score > 25 && score <= 30) {
         return grade = "A";
-    }   
-        if (score > 20 && score <= 25){
+    }
+    if (score > 20 && score <= 25) {
         return grade = "B";
-    }   
-       if (score > 15 && score <= 20){
+    }
+    if (score > 15 && score <= 20) {
         return grade = "C";
     }
-        if (score > 10 && score <= 15){
+    if (score > 10 && score <= 15) {
         return grade = "D";
     }
-        if (score > 5 && score <= 10){
+    if (score > 5 && score <= 10) {
         return grade = "E";
     }
-        if (score >= 0 && score <= 5){
+    if (score >= 0 && score <= 5) {
         return grade = "F";
     }
 
-        return grade;
-    }
-    
+    return grade;
+}
 
-    function main() {
+
+function main() {
     const score = +(readLine());
-    
+
     console.log(getGrade(score));
 }
+
+
+
+
+
+
+
+
+
 
 
 //*************  Day 2: Conditional Statements: Switch  *************
@@ -192,31 +232,31 @@ function main() {
 function getLetter(s) {
     let letter;
     // Write your code here
-    switch(s.charAt(0)) {  // CharAt = İlk Karakteri Bulmak idi (0) gibi ("Hint" yani "ipucunda" vermişti bunu)
+    switch (s.charAt(0)) {  // CharAt = İlk Karakteri Bulmak idi (0) gibi ("Hint" yani "ipucunda" vermişti bunu)
 
         case 'a':
         case 'e':
         case 'i':
         case 'o':
         case 'u':
-        letter = 'A'
-        break;
+            letter = 'A'
+            break;
 
         case 'b':
         case 'c':
         case 'd':
         case 'f':
         case 'g':
-        letter = 'B'
-        break;
+            letter = 'B'
+            break;
 
         case 'h':
         case 'j':
         case 'k':
         case 'l':
         case 'm':
-        letter = 'C'
-        break;
+            letter = 'C'
+            break;
 
         case 'n':
         case 'p':
@@ -229,40 +269,47 @@ function getLetter(s) {
         case 'x':
         case 'y':
         case 'z':
-        letter = 'D'
-        break;
+            letter = 'D'
+            break;
     }
     return letter;
 }
 
 
-// Method 2:  includes(s[0])  // includes(0) methodu -> aradığımız bilginin değişken içerisinde olup olmadığının kontrolüdür
 
+
+// Method 2:  includes(s[0])  // includes(0) methodu -> aradığımız bilginin değişken içerisinde olup olmadığının kontrolüdür
 
 function getLetter(s) {
     let letter;
     // Write your code here
-    switch(true) {
-          
+    switch (true) {
+
         case 'aeiou'.includes(s[0]):
-        letter = "A";
-        break;
-           
+            letter = "A";
+            break;
+
         case 'bcdfg'.includes(s[0]):
-        letter = "B";
-        break;
-           
+            letter = "B";
+            break;
+
         case 'hjklm'.includes(s[0]):
-        letter = "C";
-        break;  
-                 
+            letter = "C";
+            break;
+
         case 'npqrstvwxyz'.includes(s[0]):
-        letter = "D";
-        break; 
-          }
+            letter = "D";
+            break;
+    }
 
     return letter;
 }
+
+
+
+
+
+
 
 
 //*************  Day 2: Loops  *************
@@ -273,20 +320,20 @@ function getLetter(s) {
  * Print your output using 'console.log()'.
  */
 
-let vowels = 'aeiou' 
+let vowels = 'aeiou'
 let s = 'javascriptloops'
 
 function vowelsAndConsonants(s) {
-    for (let index = 0; index < s.length; index++){
+    for (let index = 0; index < s.length; index++) {
 
-        if (vowels.includes(s[index])){
+        if (vowels.includes(s[index])) {
             console.log(s[index]);
         }
     }
 
-    for (let index = 0; index < s.length; index++){
+    for (let index = 0; index < s.length; index++) {
 
-        if (!vowels.includes(s[index])){
+        if (!vowels.includes(s[index])) {
             console.log(s[index]);
         }
     }
@@ -299,9 +346,18 @@ function vowelsAndConsonants(s) {
 
 
 
+
+
+
+
+
+
+
+
+
 //*************  Day 3: Arrays  *************
 
- 
+
 // *   Return the second largest number in the array.
 // *   @param {Number[]} nums - An array of numbers.
 // *   @return {Number} The second largest number in the array.
@@ -309,14 +365,24 @@ function vowelsAndConsonants(s) {
 
 
 function getSecondLargest(nums) {
-    
-    let secondLargest = nums.sort(function(a,b) {  // secondLargest adında bir değişken açtık, 
-            return b-a; // ve nums'u bu değişken içinde büyükten küçüğe doğru sıraladık
-        });
-         return secondLargest.find((secondLargest) => secondLargest < nums[0]); 
-         // daha sonra .find metoduyla ikinci büyük sayısı bulmuş olduk.
-    }
-    
+
+    let secondLargest = nums.sort(function (a, b) {  // secondLargest adında bir değişken açtık, 
+        return b - a; // ve nums'u bu değişken içinde büyükten küçüğe doğru sıraladık
+    });
+    return secondLargest.find((secondLargest) => secondLargest < nums[0]);
+    // daha sonra .find metoduyla ikinci büyük sayısı bulmuş olduk.
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 //*************  Day 3: Try, Catch, and Finally  *************
@@ -327,16 +393,20 @@ function getSecondLargest(nums) {
 function reverseString(s) {
 
     try {
-     let str =  s.split("").reverse().join(""); // str: is the alphabetical reverse writing of "s"
-      console.log(str);
-    } 
+        let str = s.split("").reverse().join(""); // str: is the alphabetical reverse writing of "s"
+        console.log(str);
+    }
     catch (err) { // An error occured in the code 
         console.log(err.message);
-        console.log(s); 
-        }
+        console.log(s);
+    }
 
 };
 // reverseString("123") --> For Check
+
+
+
+
 
 
 
@@ -346,15 +416,23 @@ function reverseString(s) {
 
     try {
         s = s.split("").reverse().join(""); // böl, ters çevir, birleştir
-       }
-       catch (err){
-           console.log("s.split is not a function") // hata var ise console'a bu raporu yazdır ("soru" da böyle istiyor)
-       }
-       finally {
-           console.log(s) // hata var ise hata raporundan sonra da orjinal dize yazılsın, hata yok ise sadece dize yazılsın   
-       }
-   
+    }
+    catch (err) {
+        console.log("s.split is not a function") // hata var ise console'a bu raporu yazdır ("soru" da böyle istiyor)
+    }
+    finally {
+        console.log(s) // hata var ise hata raporundan sonra da orjinal dize yazılsın, hata yok ise sadece dize yazılsın   
+    }
+
 };
+
+
+
+
+
+
+
+
 
 
 
@@ -369,31 +447,44 @@ function reverseString(s) {
  */
 
 function isPositive(a) {
-    
-    if ( a > 0) {
+
+    if (a > 0) {
         return "YES"
-    } else if ( a === 0) {
-         throw Error("Zero Error")
-    } else if ( a < 0) {
-         throw Error("Negative Error")
+    } else if (a === 0) {
+        throw Error("Zero Error")
+    } else if (a < 0) {
+        throw Error("Negative Error")
     }
 
 };
 
 
-    // Method 2:
+
+
+
+
+// Method 2:
 
 function isPositive(a) {
 
     let final = 'YES';
 
     if (a < 0) {
-        throw ( {message: 'Negative Error'} );
+        throw ({ message: 'Negative Error' });
     } else if (a === 0) {
-        throw ( {message: 'Zero Error'} );
+        throw ({ message: 'Zero Error' });
     }
- return final;
+    return final;
 };
+
+
+
+
+
+
+
+
+
 
 
 
@@ -403,34 +494,50 @@ function isPositive(a) {
  * Complete the Rectangle function
  */
 function Rectangle(a, b) {
-    
+
     return (  // sorunun bizden object istediğini unutmamak lazım, çünkü ben unuttum...
-    {
-    length: a,
-    width: b,
-    perimeter: 2*(a+b),
-    area: a*b,
-    }
+        {
+            length: a,
+            width: b,
+            perimeter: 2 * (a + b),
+            area: a * b,
+        }
     );
 };
+
+
+
+
+
+
+
+
+
 
 
 
 //*************  Day 4: Classes *************
 
 const reducer = (previousValue, currentValue) => previousValue + currentValue;
-   
-class Polygon{
-    
-constructor(sides){        
-    this.sides = sides
-}
 
-perimeter() {
-    return this.sides.reduce(reducer)
-}    
+class Polygon {
+
+    constructor(sides) {
+        this.sides = sides
+    }
+
+    perimeter() {
+        return this.sides.reduce(reducer)
+    }
 
 };
+
+
+
+
+
+
+
 
 
 
@@ -446,7 +553,7 @@ class Rectangle {
 /*
  *  Write code that adds an 'area' method to the Rectangle class' prototype
  */
-Rectangle.prototype.area = function() {
+Rectangle.prototype.area = function () {
     return this.h * this.w
 }
 /*
@@ -454,26 +561,86 @@ Rectangle.prototype.area = function() {
  */
 class Square extends Rectangle {
     constructor(w) {
-        super(w,w)
+        super(w, w)
     }
 }
+
+
+
+
+
+
+
+
 
 
 //*************  Day 5: Arrow Functions  *************
 
 // let nums = [1,2,3,4,5]  
-let nums = [1,2,3,4,5,6,7,8,9,10] 
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 function modifyArray(nums) {
-    
-    let nums2 = nums.map(item => item % 2 == 0 ? item*2 : item*3)
+
+    let nums2 = nums.map(item => item % 2 == 0 ? item * 2 : item * 3)
     //console.log(nums2)
 
-    
+
     return nums2
 };
 modifyArray(nums);
+
+
+
+
+
+
+
+
+
+
+//*************  Day 6: JavaScript Dates  *************
+
+
+// Method-1:
+function getDayName(dateString) {
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    const date = new Date(dateString);
+
+    return days[date.getDay()]
+
+}
+console.log(getDayName("10/11/2009")); // Sunday
+
+
+
+
+// Method-2:
+
+function getDayName(dateString) {
+
+    let dayName;
+    // Write your code here
+
+    let date = new Date(dateString);
+
+    switch (date.getDay()) {
+        case 0: dayName = "Sunday"; break;
+        case 1: dayName = "Monday"; break;
+        case 2: dayName = "Tuesday"; break;
+        case 3: dayName = "Wednesday"; break;
+        case 4: dayName = "Thursday"; break;
+        case 5: dayName = "Friday"; break;
+        case 6: dayName = "Saturday"; break;
+    }
+
+    return dayName;
+}
+
+
+
+
 
 
 
@@ -491,8 +658,8 @@ function regexVar() {
      * Declare a RegExp object variable named 're'
      * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
      */
-     let re = /^([aeiou]).*\1$/;
-     return re;    
+    let re = /^([aeiou]).*\1$/;
+    return re;
     /*
      * Do not remove the return statement
      */
@@ -517,6 +684,20 @@ function regexVar() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //*************  Day 8: Create a Button  *************
 
 // *** Method-1 ***
@@ -530,15 +711,15 @@ function regexVar() {
 //     width: 96px;
 //     font-size: 24px; 
 //  }
- 
- // Javascript :
-    const butoncuk = document.querySelector('div')
 
-    let count = 0;
+// Javascript :
+const butoncuk = document.querySelector('div')
 
-    butoncuk.innerHTML = `<button id="btn">${count}</button>`
+let count = 0;
 
-    btn.onclick=function(){
+butoncuk.innerHTML = `<button id="btn">${count}</button>`
+
+btn.onclick = function () {
     document.getElementById('btn').innerHTML = count = count + 1;
     console.log(count)
 }
@@ -550,9 +731,9 @@ function regexVar() {
 // <button type="button" id="btn">0</button>
 
 // Javascript:
-let butoncukDOM =  document.getElementById('btn');
+let butoncukDOM = document.getElementById('btn');
 let count = 0;
-butoncukDOM.addEventListener('click', function() {
+butoncukDOM.addEventListener('click', function () {
     count = count + 1;
     butoncukDOM.innerHTML = count;
 });
@@ -560,5 +741,15 @@ butoncukDOM.addEventListener('click', function() {
 // *** Method-3 ***
 // Html ile işi çabucak da çözebiliriz ama kolaya kaçmak olur :)
 <button type="button" id="btn" onclick="this.innerHTML++">0</button>
+
+
+
+
+
+
+
+
+
+
 
 
