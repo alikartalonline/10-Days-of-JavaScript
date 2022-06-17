@@ -734,6 +734,115 @@ function regexVar() {
 
 
 
+//*************  Day 8: Day 8: Buttons Container  *************
+
+// index.html:
+/*
+<!-- Enter your HTML code here -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buttons Grid</title>
+        <link rel="stylesheet" href="css/buttonsGrid.css" type="text/css">
+    </head>
+    <body>
+        <div id="btns" class="btnContainer">
+
+    <button id="btn1" class="btnStyle">1</button>
+
+    <button id="btn2" class="btnStyle">2</button>
+
+    <button id="btn3" class="btnStyle">3</button>
+
+    <button id="btn4" class="btnStyle">4</button>
+
+    <button id="btn5" class="btnStyle" onClick="rotate()">5</button>
+
+
+    <button id="btn6" class="btnStyle">6</button>
+
+    <button id="btn7" class="btnStyle">7</button>
+
+    <button id="btn8" class="btnStyle">8</button>
+
+    <button id="btn9" class="btnStyle">9</button>
+
+<script src="js/buttonsGrid.js" > </script>
+
+</div>
+    </body>
+</html>
+*/
+
+
+// CSS 
+/*
+.btnContainer {
+    width: 75%;
+ }
+ 
+ 
+ 
+ .btnContainer > .btnStyle {
+    width: 30%;
+    height: 48px;
+    font-size: 24px;
+ 
+ }
+*/
+
+
+ // JavaScript Method-1:
+ let x = "4";
+ let a = ["1", "2", "3", "6", "9", "8", "7", "4"];
+ let b = ["1", "2", "3", "6", "9", "8", "7", "4"];
+ 
+ 
+ let rotate = function () {
+ 
+     for (let i = 7; i > 0; i--) {
+         a[i] = a[i - 1];
+     }
+ 
+     a[0] = x;
+     x = a[7];
+ 
+     for (let i = 0; i < 8; i++) {
+         document.getElementById("btn" + b[i]).innerText = a[i];
+     }
+ 
+ }
+
+// JavaScript Method-2:
+const ids = [1, 2, 3, 6, 9, 8, 7, 4]; // start positions ids in clockwise order
+let nums = [1, 2, 3, 6, 9, 8, 7, 4]; // rotating in clockwise order
+
+let btn5 = document.getElementById("btn5");
+
+
+btn5.onclick = function () {
+
+    nums.unshift(nums.pop());
+
+    for (i = 0; i <= 7; i++) {
+        document.getElementById("btn" + ids[i]).innerHTML = nums[i];
+    }
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
 
 //*************  Day 8: Create a Button  *************
 
