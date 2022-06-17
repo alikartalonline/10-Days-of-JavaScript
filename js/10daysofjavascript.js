@@ -687,6 +687,27 @@ function regexVar() {
 
 
 
+//*************  Day 7: Regular Expressions II  *************
+
+function regexVar() {
+    /*
+     * Declare a RegExp object variable named 're'
+     * It must match a string that starts with 'Mr.', 'Mrs.', 'Ms.', 'Dr.', or 'Er.', 
+     * followed by one or more letters.
+     */
+    const re = new RegExp(/^(Mr\.|Dr\.|Er\.|Ms\.|Mrs\.)\s?[a-zA-Z]*$/gm);
+    /*
+     * Do not remove the return statement
+     */
+    return re;
+}
+console.log(regexVar("Mr.X"))
+
+// Method 1 or 2:
+// const re = new RegExp(/^(Mr\.|Dr\.|Er\.|Ms\.|Mrs\.)\s?[a-z|A-Z]+$/gm);
+// const re = new RegExp(/^(Mr\.|Dr\.|Er\.|Ms\.|Mrs\.)\s?[a-zA-Z]*$/gm);
+
+
 
 
 
