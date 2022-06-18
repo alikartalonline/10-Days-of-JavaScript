@@ -720,7 +720,7 @@ function regexVar() {
      * It must match ALL occurrences of numbers in a string.
      */
     const re = new RegExp(/[0-9]+/gm);
-
+    
     /*
      * Do not remove the return statement
      */
@@ -794,26 +794,26 @@ function regexVar() {
 */
 
 
-// JavaScript Method-1:
-let x = "4";
-let a = ["1", "2", "3", "6", "9", "8", "7", "4"];
-let b = ["1", "2", "3", "6", "9", "8", "7", "4"];
-
-
-let rotate = function () {
-
-    for (let i = 7; i > 0; i--) {
-        a[i] = a[i - 1];
-    }
-
-    a[0] = x;
-    x = a[7];
-
-    for (let i = 0; i < 8; i++) {
-        document.getElementById("btn" + b[i]).innerText = a[i];
-    }
-
-}
+ // JavaScript Method-1:
+ let x = "4";
+ let a = ["1", "2", "3", "6", "9", "8", "7", "4"];
+ let b = ["1", "2", "3", "6", "9", "8", "7", "4"];
+ 
+ 
+ let rotate = function () {
+ 
+     for (let i = 7; i > 0; i--) {
+         a[i] = a[i - 1];
+     }
+ 
+     a[0] = x;
+     x = a[7];
+ 
+     for (let i = 0; i < 8; i++) {
+         document.getElementById("btn" + b[i]).innerText = a[i];
+     }
+ 
+ }
 
 // JavaScript Method-2:
 const ids = [1, 2, 3, 6, 9, 8, 7, 4]; // start positions ids in clockwise order
@@ -853,22 +853,16 @@ btn5.onclick = function () {
 
 
 /*
-Css:
+Css: 
 
-.btnContainer {
-    width: 75%;
- }
- 
-.btnContainer > .btnStyle {
-    width: 30%;
-    height: 48px;
-    font-size: 24px;
- 
- }
+ #btn{
+     height: 48px;
+     width: 96px;
+     font-size: 24px; 
+  }
 
+  
 */
-
-
 
 
 // Javascript :
